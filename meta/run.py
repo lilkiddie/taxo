@@ -1,5 +1,5 @@
 import argparse
-from taxoenrich.meta.model import CAEME, AAEME
+from taxo.meta.model import CAEME, AAEME
 import torch
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler, RandomSampler, Dataset
 import gensim
@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import normalize
 from scipy.sparse.linalg import svds, eigs
 
-from taxoenrich.taxoenrich.models import RuWordNet, EnWordNet, RuThes
+from taxo.taxoenrich.models import RuWordNet, EnWordNet, RuThes
 
 lang = ''
 def normalise_word_vectors(word_vectors, norm=1.0):
