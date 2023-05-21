@@ -4,8 +4,10 @@ import pandas as pd
 # from taxo.taxoenrich.utils import create_train_dataset_broad, reinit_vector_model
 from . import taxoenrich
 HypernymPredictModel = taxoenrich.models.HypernymPredictModel
+create_train_dataset_broad = taxoenrich.utils.create_train_dataset_broad
+reinit_vector_model = taxoenrich.utils.reinit_vector_model
 # from taxoenrich.models import HypernymPredictModel
-from taxoenrich.utils import create_train_dataset_broad, reinit_vector_model
+# from taxoenrich.utils import create_train_dataset_broad, reinit_vector_model
 import os
 
 
