@@ -36,7 +36,7 @@ def save_vectors(wv, wv_path):
             if wv[w].shape[0] != wv_size:
                 continue
             vector = ' '.join([str(val) for val in wv[w]])
-            file_descr.write(f'\n{w[3:]} {vector}')
+            file_descr.write(f'\n{w} {vector}')
 
 def find_closes_w_vec(w, word_vectors_list, wv_index):
     most_sim = {}
