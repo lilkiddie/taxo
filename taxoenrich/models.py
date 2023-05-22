@@ -10,8 +10,8 @@ import numpy as np
 import joblib
 import gensim
 from collections import OrderedDict
-from taxo.taxoenrich.utils import StaticVectorModel, LogRegScaler, get_score, create_graph, reinit_vector_model
-from taxo.taxoenrich.core import EnWordNet, RuWordNet, RuThes
+from taxoenrich.utils import StaticVectorModel, LogRegScaler, get_score, create_graph, reinit_vector_model
+from taxoenrich.core import EnWordNet, RuWordNet, RuThes
 from sklearn.model_selection import KFold
 from sklearn.metrics import roc_auc_score
 
